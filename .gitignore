@@ -22,3 +22,9 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Claude Code local settings and memory
+.claude/
+
+# Root-level PDFs (certificates belong in public/certificates/)
+/*.pdf

@@ -14,7 +14,7 @@ function App() {
         /* glitchColors={['#5a85c7', '#89b4fa', '#b3d1fc']} */
         /* glitchColors={['#0f766e', '#14b8a6', '#5eead4']} */
       />
-      
+
       <SplashCursor />
 
       <div className="outer-container" style={{
@@ -36,8 +36,8 @@ function App() {
           boxShadow: '0 25px 50px -12px rgba(0, 0, 0, 0.5)',
           border: '1px solid rgba(255, 255, 255, 0.2)'
         }}>
-          {/* Top padding: 10% */}
-          <div style={{ height: '10%' }}></div>
+          {/* Top padding: 11.5% */}
+          <div style={{ height: '11.5%' }}></div>
 
           {/* Title: 10% */}
           <div style={{ height: '10%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -52,8 +52,8 @@ function App() {
             </h1>
           </div>
 
-          {/* Space between title and subtitle: 5% */}
-          <div style={{ height: '5%' }}></div>
+          {/* Space between title and subtitle: 4% */}
+          <div style={{ height: '4%' }}></div>
 
           {/* Subtitle: 8% */}
           <div style={{ height: '8%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -66,8 +66,8 @@ function App() {
             </p>
           </div>
 
-          {/* Space between subtitle and text: 5% */}
-          <div style={{ height: '5%' }}></div>
+          {/* Space between subtitle and text: 4% */}
+          <div style={{ height: '4%' }}></div>
 
           {/* Text: 30% */}
           <div className="body-text" style={{
@@ -76,34 +76,34 @@ function App() {
             flexDirection: 'column',
             justifyContent: 'center',
             alignItems: 'center',
-            gap: '8px',
             color: 'rgba(255,255,255,0.7)',
             textAlign: 'center',
             lineHeight: '1.3'
           }}>
-            {[
-              'writing python code', 'using arch linux btw', 'learning data science',
-              'reading any good books', 'observing crypto markets',
-              'playing steam & playstation', 'enthusiast about open-source',
-            ].map((t, i) => <p key={i} style={{ margin: 0 }}>{t}</p>)}
+            <p style={{ margin: 0 }}>M.Sc. in Data Science</p>
+            <p style={{ margin: 0 }}>B.Sc. in Finance</p>
+            <p style={{ margin: 0 }}>Google <a href="/certificates/google-ai.pdf" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>certified</a> in AI</p>
+            <p style={{ margin: 0 }}>IBM <a href="/certificates/ibm-agentic-ai.pdf" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>certified</a> in Agentic AI</p>
+            <p style={{ margin: 0 }}>Google <a href="/certificates/google-data-analytics.pdf" target="_blank" rel="noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>certified</a> in Data Analysis</p>
+            <p style={{ margin: 0 }}>open-source contributor</p>
+            <p style={{ margin: 0 }}>blockchain enthusiast</p>
+            <p style={{ margin: 0 }}>avid reader and gamer</p>
           </div>
 
-          {/* Space between text and email button: 5% */}
-          <div style={{ height: '5%' }}></div>
+          {/* Space between text and email button: 4% */}
+          <div style={{ height: '4%' }}></div>
 
-          {/* Email button: 10% */}
+          {/* Buttons: 10% */}
           <div style={{
             height: '10%',
             display: 'flex',
             justifyContent: 'center',
-            alignItems: 'center'
+            alignItems: 'center',
+            gap: '16px'
           }}>
             <a
               href="mailto:alex@braguta.com"
-              style={{
-                textDecoration: 'none',
-                color: 'inherit',
-              }}
+              style={{ textDecoration: 'none', color: 'inherit' }}
             >
               <button
                 style={{
@@ -134,10 +134,45 @@ function App() {
                 </svg>
               </button>
             </a>
+            <a
+              href="https://github.com/AlexBraguta"
+              target="_blank"
+              rel="noreferrer"
+              style={{ textDecoration: 'none', color: 'inherit' }}
+            >
+              <button
+                style={{
+                  width: '48px',
+                  height: '48px',
+                  borderRadius: '50%',
+                  border: '1px solid rgba(255, 255, 255, 0.3)',
+                  backgroundColor: 'transparent',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  cursor: 'pointer',
+                  transition: 'background-color 0.2s'
+                }}
+              >
+                <svg
+                  style={{ width: '20px', height: '20px', color: 'rgba(255, 255, 255, 0.7)' }}
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"
+                  />
+                </svg>
+              </button>
+            </a>
           </div>
 
-          {/* Space between email button and copyright: 5% */}
-          <div style={{ height: '5%' }}></div>
+          {/* Space between email button and copyright: 4% */}
+          <div style={{ height: '4%' }}></div>
 
           {/* Copyright: 3% */}
           <div style={{ height: '3%', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
@@ -146,12 +181,12 @@ function App() {
               textAlign: 'center',
               margin: 0
             }}>
-              all rights reserved <a href='https://systematiq.one' target='_blank' rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>©</a> 2025
+              all rights reserved <a href='https://systematiq.one' target='_blank' rel="noreferrer" style={{color: 'inherit', textDecoration: 'none'}}>©</a> {new Date().getFullYear()}
             </p>
           </div>
 
-          {/* Bottom padding: 9% */}
-          <div style={{ height: '9%' }}></div>
+          {/* Bottom padding: 11.5% */}
+          <div style={{ height: '11.5%' }}></div>
         </div>
       </div>
     </div>
